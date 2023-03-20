@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="App">
+        <div class="d-flex justify-content-center my-4 ">
+            <div class="card text-bg-dark shadow-lg p-3 mb-5 rounded" style="width:'25rem'">
+                <div class="card-body">
+                    <div class="form-group">
+                        <h2>PBB Kalkulator</h2>
+                        <p>Perhitungan pajak bumi dan bangunan</p>
+                        <hr />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label my-2">Luas Tanah</label>
+                        <input type="number" class="form-control my-1" required id="luasTanah" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label my-2">Luas Bangunan</label>
+                        <input type="number" class="form-control my-1" required id="luasBangunan" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label my-2">NJOP Tanah</label>
+                        <input type="number" class="form-control my-1" required id="njopTanah" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label my-2">NJOP Bangunan</label>
+                        <input type="number" class="form-control my-1" required id="njopBangunan" />
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary my-3" type="submit" onClick="besaranPBB()">Hitung</button>
+                    </div>
+                    <div>
+                        <div class="alert alert-info" role="alert">
+                            Besaran PBB pertahun adalah <div id="hasil"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="./scirpt.js"></script>
+</body>
+
+</html>
